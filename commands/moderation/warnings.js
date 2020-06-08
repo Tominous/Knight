@@ -39,11 +39,11 @@ module.exports = {
 			.setColor("#9500d6")
       .setDescription(`**Reason:** ${warnings.join("\n")}.`, true) // || bot.fetchUser(w.warner)).tag}
       message.channel.send(embed); 
-   /* message.channel.send(
+    message.channel.send(
       `${member.displayName} has ${
         warnings.length
       } warnings: \`\`\` ${warnings.join("\n")}\`\`\``
-    ); */
+    );
   });
 }
 }
