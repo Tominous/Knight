@@ -11,7 +11,7 @@ const v = require("./../../package.json");
 module.exports = {
     name: "botinfo",
     category: "utility",
-    description: "See the info of the bot!",
+    description: "See the information of the bot!",
     aliases: ["info"],
     Usage: "botinfo",
     run: async(client, message, args) => {
@@ -23,7 +23,7 @@ module.exports = {
         const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
         const embedStats = new Discord.RichEmbed()
             .setAuthor(client.user.username)
-            .setTitle("__**Stats:**__")
+            .setTitle("__**Statistics:**__")
             .setColor("RANDOM")
             .setDescription(`Bot current version: alpha_(${v.version})`)
             .addField("� Mem Usage", `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} / ${(os.totalmem() / 1024 / 1024).toFixed(2)} MB`, true)
